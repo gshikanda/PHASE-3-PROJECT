@@ -153,4 +153,5 @@ The dataset has  36 columns. The first column respondent_id is a unique and rand
 35. <span style="color:red;">employment_industry</span> - Type of industry respondent is employed in. Values are represented as short random character strings.
 36. <span style="color:red;">employment_occupation</span> - Type of occupation of respondent. Values are represented as short random character strings.
 
-
+the model used is for classification:logistic regression and decision tree.
+logistic regression proved to have the best accuracy for the model of choice.
