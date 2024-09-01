@@ -152,6 +152,29 @@ The dataset has  36 columns. The first column respondent_id is a unique and rand
 34. <span style="color:red;">household_children</span> - Number of children in household, top-coded to 3.
 35. <span style="color:red;">employment_industry</span> - Type of industry respondent is employed in. Values are represented as short random character strings.
 36. <span style="color:red;">employment_occupation</span> - Type of occupation of respondent. Values are represented as short random character strings.
+    
+## model used
+The model used is for classification:Logistic regression and Decision Tree.
+```python
+#import the necessary classifiers
+from sklearn.neural_network import MLPClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.svm import SVC
+from sklearn.gaussian_process import GaussianProcessClassifier
+from sklearn.ensemble import GradientBoostingClassifier
+from sklearn.gaussian_process.kernels import RBF
+from sklearn.tree import  DecisionTreeClassifier
+from sklearn.ensemble import ExtraTreesClassifier
+from sklearn.ensemble import RandomForestClassifier,AdaBoostClassifier
+from sklearn.naive_bayes import GaussianNB
+from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis
+from sklearn.linear_model import SGDClassifier
+from sklearn.multioutput import MultiOutputClassifier
+from sklearn.linear_model import LogisticRegression
 
-the model used is for classification:logistic regression and decision tree.
-logistic regression proved to have the best accuracy for the model of choice.
+```
+Logistic regression proved to have the best accuracy for the model of choice foolowed by Decision Tree out of the many classification models.
+
+## conclusion
+Due to the varied symptoms associated with flu which might also apply to other diseases like common cold the model has a high chance of detecting false positive.This might not be a major problem in giving the vaccine compared to model that has high false negative.
+
